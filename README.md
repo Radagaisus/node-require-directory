@@ -8,6 +8,9 @@ Hat tip to [require-directory](https://github.com/TroyGoode/node-require-directo
 npm install node-require-directory
 ```
 
+[![build status](https://secure.travis-ci.org/Radagaisus/node-require-directory.png)](http://travis-ci.org/Radagaisus/node-require-directory)
+
+
 ```coffee
 assert = require 'assert'
 require_directory = require '../index'
