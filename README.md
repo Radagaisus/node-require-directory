@@ -2,6 +2,8 @@
 
 Simple. Recursively iterates over a directory and requires all files, returning a nested hash structure of all files.
 
+Hat tip to [require-directory](https://github.com/TroyGoode/node-require-directory). I just needed something simpler.
+
 ```
 npm install node-require-directory
 ```
