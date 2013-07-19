@@ -9,8 +9,10 @@ module.exports = require_directory = (directory) ->
 		if fs.statSync(file_path).isDirectory()
 			hash[basename(file_path)] = require_directory(file_path)
 		else
-			hash[file_name] = require(file_path)
+			if file_name is 'index' and typeof require(file_path) is 'object'
+				for key, value of require(file_path)
+					hash[key] = value
+			else
+				hash[file_name] = require(file_path)
 		return hash
 	, {}
-
-
