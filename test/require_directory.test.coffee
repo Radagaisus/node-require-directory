@@ -3,7 +3,15 @@ require_directory = require '../index'
 example_directory = './test/example'
 
 describe 'require-directory', ->
-
+	# This is the directory structure:
+	#   example/
+	#     - hello.coffee
+	#     - hi.coffee
+	#     - nested/
+	#       - bleep.coffee
+	#       - triple
+	#         - yeah.coffee
+	#
   it 'should work', ->
     dir = require_directory(example_directory)
     assert.equal dir.hello, 'world',
