@@ -1,3 +1,5 @@
+sys = require 'sys'
+{exec} = require 'child_process'
 assert = require 'assert'
 require_directory = require '../index'
 example_directory = './test/example'
@@ -14,11 +16,15 @@ describe 'require-directory', ->
 	#         - yeah.coffee
 	#         - index.coffee
 	#
-  it 'should work', ->
-    dir = require_directory(example_directory)
-    assert.equal dir.hello, 'world',
-    assert.equal dir.hi, 'you',
-    assert.equal dir.nested.bleep, 'boop'
-    assert.equal dir.nested.triple.yeah, 'woo'
-    assert.equal dir.nested.get, 'bloop'
-    assert.equal dir.nested.triple.index, 'hello'
+	it 'should work', ->
+		dir = require_directory(example_directory)
+		assert.equal dir.hello, 'world',
+		assert.equal dir.hi, 'you',
+		assert.equal dir.nested.bleep, 'boop'
+		assert.equal dir.nested.triple.yeah, 'woo'
+		assert.equal dir.nested.get, 'bloop'
+		assert.equal dir.nested.triple.index, 'hello'
+		assert.equal dir.nested.DS_Store, undefined
+		assert.equal dir.nested.unknown_weird_file, undefined
+
+

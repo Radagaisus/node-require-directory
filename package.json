@@ -1,7 +1,7 @@
 {
   "author": "Almog Melamed <radagaisus@gmail.com> (http://github.com/radagaisus/)",
   "name": "node-require-directory",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Recursively iterates over a directory and requires all files, returning a nested hash structure of all files",
   "keywords": ["require", "directory"],
   "homepage": "https://github.com/radagaisus/node-require-directory/",
