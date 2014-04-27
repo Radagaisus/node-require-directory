@@ -1,5 +1,7 @@
 # Require Directory
 
+![https://nodei.co/npm/node-require-directory.png?downloads=true](https://nodei.co/npm/node-require-directory.png?downloads=true)
+
 Simple. Recursively iterates over a directory and require all files, returning a nested hash structure of all files. Only requires CoffeeScript and JS files.
 
 Hat tip to [require-directory](https://github.com/TroyGoode/node-require-directory). I just needed something simpler.
