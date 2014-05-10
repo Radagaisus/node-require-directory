@@ -1,5 +1,3 @@
-sys = require 'sys'
-{exec} = require 'child_process'
 assert = require 'assert'
 require_directory = require '../index'
 example_directory = './test/example'
