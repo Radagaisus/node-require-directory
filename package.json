@@ -35,7 +35,7 @@
     "mocha": "latest"
   },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha -R spec --ui bdd --require coffee-script --colors --compilers coffee:coffee-script test/*"
+    "test": "./node_modules/mocha/bin/mocha -R spec --ui bdd --require coffee-script --colors --compilers coffee:coffee-script/register test/*"
     
   },
   "bin": {}
